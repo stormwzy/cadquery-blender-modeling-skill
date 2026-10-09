@@ -4,6 +4,10 @@
 
 本技能从一次屏幕保护壳和吊装支架的实际建模过程整理而来。实际建模工具是 **CadQuery + Blender**；SolidWorks 是 STEP 兼容目标。流程涵盖尺寸来源、角度方向、五金空间、打印朝向、导出文件复核和版本交付。后续长通道打印失败的经验也已纳入：几何贯通检查不能替代打印和清理检查。
 
+![完整屏幕吊装支架：屏幕保护壳、标牌和吊装结构](docs/screen-bracket-preview.png)
+
+上图为原项目完整屏幕吊装支架的 Blender 装配预览。屏幕、PCB、紧固件和上方安装板作为装配参照；图中完整支架用于展示工作流成果，通用工艺试块用于运行与验证脚本。
+
 ## 安装
 
 将 `skills/cadquery-blender-modeling` 整个文件夹复制到你的 Codex 技能目录，通常为 `~/.codex/skills/`（Windows 为 `%USERPROFILE%\.codex\skills\`）。重新打开会话后确认它出现在可用技能列表中；文件已复制不代表当前聊天已刷新加载。
@@ -27,9 +31,7 @@
 | `scripts/render_models.py` | 创建 Blender 场景及正、背、侧视图 |
 | `scripts/package_delivery.py` | 显式清单打包与 SHA-256 核对 |
 
-可运行示例及详细参数见 [automation.md](skills/cadquery-blender-modeling/references/automation.md)。本仓库不包含原项目模型、厂商尺寸图或软件安装包。示例是通用工艺试块，不是已验证承重零件。STEP 保留实体几何，不等于 SolidWorks 原生特征树。
-
-![脚本生成的短孔与开放螺母槽试块](docs/fit-coupon-preview.png)
+可运行示例及详细参数见 [automation.md](skills/cadquery-blender-modeling/references/automation.md)。本仓库包含原项目的装配预览图，不包含原项目模型、厂商尺寸图或软件安装包。脚本示例是通用工艺试块，不是已验证承重零件。STEP 保留实体几何，不等于 SolidWorks 原生特征树。
 
 ## 验证
 
