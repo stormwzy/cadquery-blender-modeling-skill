@@ -1,0 +1,4 @@
+interface:
+  display_name: "CadQuery + Blender 机械建模"
+  short_description: "参数化设计可打印机械零件，导出 SolidWorks STEP 与 Blender 预览"
+  default_prompt: "使用 $cadquery-blender-modeling，根据尺寸图设计可打印零件并验证孔位、装配和打印朝向。"
